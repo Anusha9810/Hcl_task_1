@@ -27,7 +27,6 @@
         int myaccount = Integer.parseInt(request.getParameter("from_account"));
 	connection = DriverManager.getConnection(connectionUrl+database, userid, pass);
 	statement=connection.createStatement();
-        String  sqls = "select * from \"account_details\" where \"account_no\"= 32023568";
         System.out.println(sqls);
 	if (request.getParameter("submit") != null) {	
 	   	   toAccount = Integer.parseInt(request.getParameter("to_account"));
